@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_10dp"
+    tools:context=".EditActivity">
+
+    <EditText
+        android:id="@+id/bookNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_24sp"
+        android:inputType="text"
+        android:hint="@string/book_name"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category_typr"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sp"/>
+
+        <EditText
+            android:id="@+id/bookCategoryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textSize="@dimen/_15sp"
+            android:inputType="text"
+            android:hint="@string/book_category"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_heading"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sp"/>
+
+        <EditText
+            android:id="@+id/bookPrice"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sp"
+            android:hint="@string/price_240"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/qty_heading"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sp"/>
+
+        <EditText
+            android:id="@+id/bookQuantity"
+            android:layout_width="@dimen/_0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sp"
+            android:hint="@string/qty_10"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/qtyDecrementButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_24sp"
+            android:textStyle="bold"
+            android:text="@string/minus_button"/>
+
+        <Button
+            android:id="@+id/qtyIncrementButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_24sp"
+            android:textStyle="bold"
+            android:text="@string/plus_button"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_marginBottom="@dimen/_5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/supplier_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sp"/>
+
+        <EditText
+            android:id="@+id/bookSupplierNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textSize="@dimen/_15sp"
+            android:inputType="text"
+            android:hint="@string/supplier_name"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/supplier_no"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sp"/>
+
+        <EditText
+            android:id="@+id/bookSupplierNoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textSize="@dimen/_15sp"
+            android:inputType="phone"
+            android:hint="@string/supplier_no"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/_10dp"
+        android:background="@drawable/ic_phone_black_24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/supplier_email"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sp"/>
+
+        <EditText
+            android:id="@+id/bookSupplierEmailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textSize="@dimen/_15sp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email_sample"/>
+
+    </LinearLayout>
+
+</LinearLayout>
